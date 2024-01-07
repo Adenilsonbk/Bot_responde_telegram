@@ -36,7 +36,7 @@ def texto(message):
     
     if buscar:
         pesquisa = wikipedia.page(buscar[0])
-        resumo = wikipedia.summary(pesquisa.title, sentences=2)  # Obtendo o resumo do artigo
+        resumo = wikipedia.summary(pesquisa.title, sentences=0)  # Obtendo o resumo do artigo
         bot.send_message(message.chat.id, resumo)
         
         print("______Resposta entregue_______")
